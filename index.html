@@ -33,16 +33,20 @@
    <h1 class="title container">ООО "Техосмотр 039"</h1> 
    <h2 class="signin ">Онлайн запись за 2 минуты</h2> 
 
-   <main class="main container">
+
+
+
+
+   <form class="main container">
 <div class="main__radio-buttons">
   <div class="main__labels">
   <label for="service">Выберите услугу</label><br>
-  <input type="radio" id="service" name="service" value="service">
+  <input type="radio" id="service" name="main" value="service">
    </div>
 
   <div class="main__labels">
     <label for="time">Дата и время</label><br>
-    <input type="radio" id="time" name="time" value="time">
+    <input type="radio" id="time" name="main" value="time">
      </div>
 
 
@@ -51,8 +55,13 @@
   <h2 class="main__content_header"></h2>
   <div class="main__services" id="demo"></div>
 </div>
-   </main>
+</form>
 
+
+<section>
+  <span class="datet"></span>
+  <span class="place"></span>
+</section>
 </body>
 <script src="scripts/main.js"></script>
 </html>
