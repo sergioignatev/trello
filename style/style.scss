@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    max-height: 100%;
+    font-family: Roboto;
+}
+.top {
+    display: flex;
+    align-items: center;
+    
+    color:white;
+    background: black;
+    padding: 10px 0px 10px 0px;
+    transition: 0.5s;
+}
+.top__container{
+    display:flex;
+    justify-content: space-between;
+   
+}
+.top__left {
+    color:rgb(239, 235, 235);
+}
+.top__right {
+    display: flex;
+
+}
+.phone {
+}
+.phone:hover{
+    color:lightgreen;
+}
+.fa-phone {
+    transform: rotateY(180deg);
+    color:lightgreen;
+    margin-right: 10px;
+}
+.mail {
+}
+.mail:hover{
+    color:lightgreen;
+
+}
+.fa-envelope {
+    color:lightgreen;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+////end of top/////
+.nav {
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__container {
+    max-height: 100px;  
+display:flex;
+justify-content: space-between;
+margin: 10px 0px 10px 0px;
+}
+
+.nav__logo {
+    max-height:inherit;
+}
+.nav__left {
+    display:flex;
+    align-items: center;
+    
+}
+
+
+.nav__btn {
+    margin-left:10px;
+    color:white;
+    padding:10px;
+    border:none;
+    background: green;
+    color:white;
+    border-radius: 8px;
+    font-size: 18px;
+
+}
+/////end of nav////
+.title{
+    color:green;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Lato',sans-serif;
+}
+.signin{
+    color:blue;
+   margin: 10px 0px 100px 200px;
+    font-size: 30px;
+    font-family: 'Lato',sans-serif;
+}
+
+//////input////
+.main {
+    display:flex;
+}
+
+.main__radio-buttons {
+
+}
+.main__labels {
+    display: flex;
+   
+    padding:10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    min-width: 200px;
+    background: lightgrey;
+    font-size: 20px;
+    margin:10px;
+}
+option{
+    padding: 10px;
+}
