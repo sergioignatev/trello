@@ -9,6 +9,24 @@ let services=()=>{
     </select>
     `
 }
+let datetime=()=>{
+    return `<input id='date' type='date'>
+    <select id="datetime__time">
+    <option>Выберите время</option>
+    <option value="09:00">09:00</option>
+    <option value="09:30">09:30</option>
+    <option value="10:00">10:00</option>
+    <option value="10:30">10:30</option>
+
+
+
+
+
+    </select>
+    `
+
+}
+
 function myF(){
     let h=document.getElementById('service')
     if(h.checked===true){
@@ -22,7 +40,7 @@ function time(){
 let f=document.getElementById('first');
 document.querySelector('#time').checked==true
 if(f.value!==""){
-    document.getElementById('demo').innerHTML='<input type="date">'
+    document.getElementById('demo').innerHTML=datetime()
 }else if(f.value===""){
     document.getElementById('demo').innerHTML='ВЫберите услугу'
 }
