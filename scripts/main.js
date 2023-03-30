@@ -11,9 +11,9 @@ let services=()=>{
 }
 document.querySelector("#demo").innerHTML=services()
 let datetime=()=>{
-    return `<input id='date' type='date'>
+    return `<input onchange="Check" id='date' type='date'>
     <select id="datetime__time">
-    <option>Выберите время</option>
+    <option value=''>Выберите время</option>
     <option value="09:00">09:00</option>
     <option value="09:30">09:30</option>
     <option value="10:00">10:00</option>
@@ -40,7 +40,7 @@ document.querySelector('#time').addEventListener('click',time)
 function time(){
 let f=document.getElementById('first');
 
-document.querySelector('#time').checked==true
+
 if(f.value!==""){
     document.getElementById('demo').innerHTML=datetime()
 }else if(f.value===""){
@@ -48,11 +48,11 @@ if(f.value!==""){
 }
 
 }
-setTimeout(Check,1000)
+setInterval(Check,1)
 function Check(){
-    let first=document.getElementById('first');
-    let secont=document.getElementById('date');
+  let f=document.querySelector('#datetime__time')
+    let s=document.getElementById('date');
     
-    document.querySelector('.place').innerHTML=first.value
-    console.log(first.value)
+    document.querySelector('.place').innerHTML=f.value+" "+s.value
+    
 }
