@@ -99,22 +99,11 @@ margin: 10px 0px 10px 0px;
     font-family: 'Lato',sans-serif;
 }
 
-//////input////
-.main {
-    display:flex;
+.form__body{
+    display: block;
+    padding-bottom: 200px;
 }
-
-.main__radio-buttons {
-
-}
-.main__labels {
-    display: flex;
-   
-    padding:10px;
-    border-radius: 10px;
-    justify-content: space-between;
-    min-width: 200px;
-    background: lightgrey;
-    font-size: 20px;
-    margin:10px;
+#demo{
+    padding:0px 200px 200px 200px;
+    text-align: center;
 }

@@ -33,35 +33,45 @@
    <h1 class="title container">ООО "Техосмотр 039"</h1> 
    <h2 class="signin ">Онлайн запись за 2 минуты</h2> 
 
-
-
-
-
-   <form class="main container">
-<div class="main__radio-buttons">
-  <div class="main__labels">
-  <label for="service">Выберите услугу</label><br>
-  <input type="radio" id="service" name="main" value="service">
-   </div>
-
-  <div class="main__labels">
-    <label for="time">Дата и время</label><br>
-    <input type="radio" id="time" name="main" value="time">
-     </div>
-
-
+<form action="" method="post">
+<div class="form__body container mt-3 text-center">
+<label for="place"><h2 class="text-center">Выберите услугу</h2></label><br>
+<select name="place" id="place" class="mt-3" required>
+  <option value="">Выберите пункт</option>
+  <option value="borzova"> ТЕХОСМОТР Борзова 58а т. 92-1</option>
+  <option value="fridrich">ТЕХОСМОТР Фридриха 15 т. 92-13-23</option>
+</select><br>
+<div id="datetime" class="container text-center mt-3">
+  <h2>Дата и время</h2>
+  <input type="date" id="date">
+  <select name="time" id="time" required>
+    <option value="">Выберите время</option>
+<option value="09:00">09:00</option>
+<option value="09:30">09:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+  </select>
 </div>
-<div id="main__content">
-  <h2 class="main__content_header"></h2>
-  <div class="main__services" id="demo"></div>
+
+<div id="about" class="text-center mt-5">
+<h2>Ваша информация</h2>
+<input type="text" class="name" id="name" placeholder="Имя" required>
+<input type="text" class="second__name" id="second__name" placeholder="Фамилия"><br>
+<label for="w3review" class="mt-3"><h2>Дополнительная информация</h2></label><br>
+Оставьте дополнительную информацию в этом окошке<br>
+<textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="">
+
+</textarea>
+</div>
+<input type="submit" value="Отправить" class="btn btn-info" id="test">
 </div>
 </form>
 
 
-<section class="container mt-5">
-  <span class="datet"></span>
-  <span class="place"></span>
-</section>
+
+<h1 id="demo">DEMO</h1>
+ 
 </body>
 <script src="scripts/main.js"></script>
 </html>
